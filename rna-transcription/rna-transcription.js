@@ -1,0 +1,16 @@
+//
+// This is only a SKELETON file for the 'RNA Transcription' exercise. It's been provided as a
+// convenience to get you started writing code faster.
+//
+
+export const strand = {
+    'G': 'C',
+    'C': 'G',
+    'T': 'A',
+    'A': 'U'
+};
+
+export const toRna = (seq) => {
+  let trans = seq.split('').map(n => strand[n]).join('')
+  return trans
+};
