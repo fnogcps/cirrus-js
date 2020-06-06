@@ -1,0 +1,7 @@
+container:
+  image: node:latest
+
+task:
+  script:
+    - npm install
+    - npm run lint-test 
